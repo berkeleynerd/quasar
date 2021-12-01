@@ -1,8 +1,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Goldydocs – New Releases</title>
+    <title>Quasar – New Releases</title>
     <link>https://slashgeek.org/quasar/blog/releases/</link>
-    <description>Recent content in New Releases on Goldydocs</description>
+    <description>Recent content in New Releases on Quasar</description>
     <generator>Hugo -- gohugo.io</generator>
     
 	  <atom:link href="https://slashgeek.org/quasar/blog/releases/index.xml" rel="self" type="application/rss+xml" />
