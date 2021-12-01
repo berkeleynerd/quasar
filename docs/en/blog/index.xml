@@ -1,0 +1,43 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Quasar – Docsy Blog</title>
+    <link>https://slashgeek.org/quasar/en/blog/</link>
+    <description>Recent content in Docsy Blog on Quasar</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="https://slashgeek.org/quasar/en/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>En: News About Docsy</title>
+      <link>https://slashgeek.org/quasar/en/blog/news/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://slashgeek.org/quasar/en/blog/news/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>En: New Releases</title>
+      <link>https://slashgeek.org/quasar/en/blog/releases/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://slashgeek.org/quasar/en/blog/releases/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>
