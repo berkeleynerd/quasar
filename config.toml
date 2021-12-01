@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://slashgeek.org/quasar"
 title = "Quasar"
 publishDir = 'docs'
 
