@@ -1,6 +1,6 @@
 
 ---
-title: "Documentation"
+title: "Introduction"
 linkTitle: "Documentation"
 weight: 20
 menu:
@@ -8,113 +8,39 @@ menu:
     weight: 20
 ---
 
-# Table of contents
+---
+description: >-
+  a gentle introduction to development using quasar's domain service patterns
+  and tooling
+---
 
-* [Introduction](gb-readme.md)
+# Introduction
 
-## Dev Environment
+EVE's thoroughly modern domain service architecture is now feature complete so there has never been a better time to [transcend the monolith](https://wiki.ccpgames.com/display/\~kristinn/2017/07/04/Life+Outside+of+the+Monolith) and help make the dream of [EVE Forever](https://wiki.ccpgames.com/display/CCP/2020/06/15/CEOBlog2020w24+-+EVE+Forever) a reality.
 
-* [Command line tools](dev-environment/cli.md)
-* [Go](dev-environment/go.md)
-* [Goland](core-concepts-and-technologies/goland.md)
-* [Git and Github](core-concepts-and-technologies/git-and-github.md)
+From the perspective of even a seasoned EVE developer, however, there are _**a lot**_ of new technologies and concepts you need to be familiar with to effectively contribute to this effort. Furthermore, it's hard to know exactly where to start on this journey and how to stay on the optimal path through the multitude of confluence pages, READMEs, FAQs, blog posts, and third-party documentation you encounter along the way.
 
-## Fundamentals
+In this guide we attempt to provide just such a starting point for developers new to CCP's domain service architecture and its long list of technologies. Our goal is to help you navigate step-by-step past each technological challenge, summarize the essential knowledge you need to keep going, and point out important internal and external resources you will want to circle back to later once you are well on your way to delivering real business and gameplay value for both CCP and its players alike.
 
-* [Contents](fundamentals/toc.md)
-* [Testing](fundamentals/tdd.md)
-* [Workflow](fundamentals/workflow.md)
-* [Hello, World](fundamentals/hello-world.md)
-* [Integers](fundamentals/integers.md)
-* [Iteration](fundamentals/iteration.md)
-* [Arrays and slices](fundamentals/arrays-and-slices.md)
-* [Structs, methods, and interfaces](fundamentals/structs-methods-and-interfaces.md)
-* [Pointers and errors](fundamentals/pointers-and-errors.md)
-* [Maps](fundamentals/maps.md)
-* [Dependency Injection](fundamentals/dependency-injection.md)
-* [Mocking](fundamentals/mocking.md)
-* [Concurrency](fundamentals/concurrency.md)
-* [Select](fundamentals/select.md)
-* [Reflection](fundamentals/reflection.md)
-* [Sync](fundamentals/sync.md)
-* [Context](fundamentals/context.md)
-* [Property based tests](fundamentals/roman-numerals.md)
-* [Math](fundamentals/math.md)
-* [File I/O](fundamentals/reading-files.md)
+## Setting expectations
 
-## Build a service
+Like many other teams at CCP, TechCo maintains an official [working agreement](https://wiki.ccpgames.com/display/TECHCO/Working+agreement+with+teams+collaborating+with+Team+Tech-Co) designed to facilitate a positive and productive working relationship between its staff and other developers throughout the company. **This is an important document** and you should read it in its entirety and bookmark it to refer to later. In fact, many of the topics we will consider in this guide are sourced directly from the working agreement and expanded on to add clarity, detail, and substance.
 
-* [Local Development](build-a-service/local-development/README.md)
-  * [Git-forking workflow](build-a-service/local-development/git-forking-workflow.md)
-  * [Eve service template](build-a-service/local-development/http-server.md)
-  * [Local development](build-a-service/local-development/app-intro.md)
-  * [Create a request](build-a-service/local-development/create-a-request.md)
-  * [Create a new event](build-a-service/local-development/create-a-new-event.md)
-  * [Send an event](build-a-service/local-development/send-an-event.md)
-  * [Receive an event](build-a-service/local-development/receive-an-event.md)
-  * [Working with the Monolith](build-a-service/local-development/working-with-the-monolith.md)
-* [Quasar Services](build-a-service/quasar-services/README.md)
-  * [Stateless vs Stateful](build-a-service/quasar-services/stateless-vs-stateful.md)
-  * [Microservices](build-a-service/quasar-services/microservices.md)
-  * [Domain Services](build-a-service/quasar-services/domain-services.md)
-  * [Domain Driven Design](build-a-service/quasar-services/domain-driven-design/README.md)
-    * [Bounded Context](build-a-service/quasar-services/domain-driven-design/bounded-context.md)
-    * [Authoritative Context](build-a-service/quasar-services/domain-driven-design/authoritative-context.md)
-    * [Tenancy](build-a-service/quasar-services/domain-driven-design/tenancy.md)
-    * [Event Sourcing](build-a-service/quasar-services/domain-driven-design/event-sourcing.md)
-    * [CQRS](build-a-service/quasar-services/domain-driven-design/cqrs.md)
-  * [The 12 Factor App](build-a-service/quasar-services/the-12-factor-app.md)
-* [Containers](build-a-service/containers/README.md)
-  * [Docker](build-a-service/containers/docker.md)
-  * [Docker Compose](build-a-service/containers/docker-compose.md)
-  * [Container Registries](build-a-service/containers/container-registries.md)
-* [Messaging](build-a-service/json/README.md)
-  * [The monolith](build-a-service/json/the-monolith.md)
-  * [Message bus](build-a-service/json/message-bus.md)
-  * [Public gateway](build-a-service/json/public-gateway.md)
-  * [Service gateway](build-a-service/json/service-gateway.md)
-  * [Protobuf](build-a-service/json/protobuf.md)
-  * [gRPC](build-a-service/json/grpc.md)
-  * [Quasar Primitives](build-a-service/json/quasar-primitives/README.md)
-    * [Events](build-a-service/json/quasar-primitives/events.md)
-    * [Requests](build-a-service/json/quasar-primitives/requests.md)
-    * [Notices](build-a-service/json/quasar-primitives/notices.md)
+## Where to find help
 
-## Deploy a service
+If you have questions or run into issues while following along with this guide feel free to ask us for help on Slack. Google and Stack Overflow are surprisingly good resources, as always, but sometimes miss the mark ... when this happens we are here to help!
 
-* [Deploy a service](deploy-a-service/deploy-a-service.md)
+* For questions about the Go language, tooling, and ecosystem in general reach out for help in the [#golang](https://ccpgames.slack.com/messages/golang/) channel.
+* For questions about how to design amazing, bullet-proof protobuf definitions ask for a review in the [#eve-proto](https://ccpgames.slack.com/messages/eve-proto/) channel.
+* For all other questions either drop by our desks or chat with us in the [#eve-services](https://ccpgames.slack.com/messages/eve-services/) channel.
+* If you run into a blocker you can ping our help desk at **@ttc-help** - whoever is on-call should be able to answer your question or put you in touch with the right resource to help get your issue resolved.
 
-***
+{% hint style="info" %}
+Roman's excellent [Eve Service FAQ](https://wiki.ccpgames.com/pages/viewpage.action?pageId=160078718) is an absolutely essential read. Once you are ready to develop a service it will be an indispensable resource!
+{% endhint %}
 
-* [Logging and Tracing](logging-and-tracing/README.md)
-* [Deploying](deploying/README.md)
-  * [Create a new project](deploying/create-a-new-project.md)
-  * [Kubernetes](deploying/kubernetes/README.md)
-    * [Pods](deploying/kubernetes/pods.md)
-    * [Nodes](deploying/kubernetes/nodes.md)
-    * [Deployments](deploying/kubernetes/deployments.md)
-    * [Services](deploying/kubernetes/services.md)
-    * [Replicasets](deploying/kubernetes/replicasets.md)
-    * [Statefulsets](deploying/kubernetes/statefulsets.md)
-    * [Persistant Volumes](deploying/kubernetes/persistant-volumes.md)
-  * [Dev, test, and live](deploying/dev-test-and-live.md)
-  * [Prometheus](deploying/prometheus.md)
-  * [Grafana](deploying/grafana.md)
-  * [Sentry](logging-and-tracing/sentry.md)
-  * [Honeycomb](logging-and-tracing/honeycomb.md)
-  * [Vault](deploying/vault.md)
-  * [Terraform](deploying/terraform.md)
-* [Deploy a service](deploy-a-service-1.md)
+## A look ahead
 
-## Topics
+We use _**Go**_ to write code and tests, _**Git**_ to handle version control, and _**Test Driven Design**_ as our overarching methodology. Combined with judicious use of the _**command line**_ this suite of technologies has allowed us to rapidly and reliably deliver new features while staying "in the flow."
 
-* [PostgreSQL](topics/postgresql.md)
-* [Redis](topics/topics.md)
-
-***
-
-* [FAQ](faq.md)
-
-## Scratch
-
-* [Snippets](scratch/snippets.md)
+In the next few sections we briefly introduce you to each of these technologies after which we provide a comprehensive tutorial to help you learn _just enough_ of each to kick start your development efforts. After completing this tutorial you will also be better prepared to tackle more advanced Go language learning [resources](https://www.gopl.io).
