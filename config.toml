@@ -71,7 +71,7 @@ id = "UA-173112328-1"
 [languages]
 [languages.en]
 # title = "Quasar"
-description = "A Quasar example site"
+description = "Quasar : EVE Domain Services"
 languageName ="English"
 # Weight used for sorting.
 weight = 1
@@ -134,7 +134,7 @@ github_branch= "main"
 gcs_engine_id = "0322946ee74728472"
 
 # Enable Algolia DocSearch
-algolia_docsearch = false
+algolia_docsearch = true
 
 # Enable Lunr.js offline search
 offlineSearch = true
