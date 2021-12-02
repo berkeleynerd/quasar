@@ -1,5 +1,5 @@
 baseURL = "https://slashgeek.org/quasar"
-title = "Quasar"
+title = "Quasarx"
 publishDir = 'docs'
 
 enableRobotsTXT = true
@@ -70,7 +70,7 @@ id = "UA-173112328-1"
 
 [languages]
 [languages.en]
-title = "Quasar"
+title = "Quasary"
 description = "A Quasar example site"
 languageName ="English"
 # Weight used for sorting.
