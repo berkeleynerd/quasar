@@ -23,14 +23,23 @@
 
 
   
-  <meta name="description" content="
+  <meta name="description" content="Table of contents
 
+Introduction
 
-This is a placeholder page that shows you how to use this template site.
+Dev Environment
 
+Command line tools
+Go
+Goland
+Git and Github
 
+Fundamentals
 
-This section is where the user documentation for your project lives - …">
+Contents
+Testing
+Workflow
+Hello, World …">
 <meta property="og:title" content="Documentation" />
 <meta property="og:description" content="A Quasar example site" />
 <meta property="og:type" content="website" />
@@ -227,6 +236,17 @@ if (!doNotTrack) {
             
 
 
+<div class="td-toc"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#dev-environment">Dev Environment</a></li>
+    <li><a href="#fundamentals">Fundamentals</a></li>
+    <li><a href="#build-a-service">Build a service</a></li>
+    <li><a href="#deploy-a-service">Deploy a service</a></li>
+    <li><a href="#topics">Topics</a></li>
+    <li><a href="#scratch">Scratch</a></li>
+  </ul>
+</nav></div>
+
 
 
             
@@ -308,17 +328,141 @@ if (!doNotTrack) {
 		
 		
 	</header>
-	
-
-<div class="pageinfo pageinfo-primary">
-<p>This is a placeholder page that shows you how to use this template site.</p>
-
-</div>
-
-<p>This section is where the user documentation for your project lives - all the information your users need to understand and successfully use your project.</p>
-<p>For large documentation sets we recommend adding content under the headings in this section, though if some or all of them don’t apply to your project feel free to remove them or add your own. You can see an example of a smaller Docsy documentation site in the <a href="https://docsy.dev/docs/">Docsy User Guide</a>, which lives in the <a href="https://github.com/google/docsy/tree/master/userguide">Docsy theme repo</a> if you&rsquo;d like to copy its docs section.</p>
-<p>Other content such as marketing material, case studies, and community updates should live in the <a href="/about/">About</a> and <a href="/community/">Community</a> pages.</p>
-<p>Find out how to use the Docsy theme in the <a href="https://docsy.dev/docs/">Docsy User Guide</a>. You can learn more about how to organize your documentation (and how we organized this site) in <a href="https://docsy.dev/docs/best-practices/organizing-content/">Organizing Your Content</a>.</p>
+	<h1 id="table-of-contents">Table of contents</h1>
+<ul>
+<li><a href="gb-readme.md">Introduction</a></li>
+</ul>
+<h2 id="dev-environment">Dev Environment</h2>
+<ul>
+<li><a href="dev-environment/cli.md">Command line tools</a></li>
+<li><a href="dev-environment/go.md">Go</a></li>
+<li><a href="core-concepts-and-technologies/goland.md">Goland</a></li>
+<li><a href="core-concepts-and-technologies/git-and-github.md">Git and Github</a></li>
+</ul>
+<h2 id="fundamentals">Fundamentals</h2>
+<ul>
+<li><a href="fundamentals/toc.md">Contents</a></li>
+<li><a href="fundamentals/tdd.md">Testing</a></li>
+<li><a href="fundamentals/workflow.md">Workflow</a></li>
+<li><a href="fundamentals/hello-world.md">Hello, World</a></li>
+<li><a href="fundamentals/integers.md">Integers</a></li>
+<li><a href="fundamentals/iteration.md">Iteration</a></li>
+<li><a href="fundamentals/arrays-and-slices.md">Arrays and slices</a></li>
+<li><a href="fundamentals/structs-methods-and-interfaces.md">Structs, methods, and interfaces</a></li>
+<li><a href="fundamentals/pointers-and-errors.md">Pointers and errors</a></li>
+<li><a href="fundamentals/maps.md">Maps</a></li>
+<li><a href="fundamentals/dependency-injection.md">Dependency Injection</a></li>
+<li><a href="fundamentals/mocking.md">Mocking</a></li>
+<li><a href="fundamentals/concurrency.md">Concurrency</a></li>
+<li><a href="fundamentals/select.md">Select</a></li>
+<li><a href="fundamentals/reflection.md">Reflection</a></li>
+<li><a href="fundamentals/sync.md">Sync</a></li>
+<li><a href="fundamentals/context.md">Context</a></li>
+<li><a href="fundamentals/roman-numerals.md">Property based tests</a></li>
+<li><a href="fundamentals/math.md">Math</a></li>
+<li><a href="fundamentals/reading-files.md">File I/O</a></li>
+</ul>
+<h2 id="build-a-service">Build a service</h2>
+<ul>
+<li><a href="build-a-service/local-development/README.md">Local Development</a>
+<ul>
+<li><a href="build-a-service/local-development/git-forking-workflow.md">Git-forking workflow</a></li>
+<li><a href="build-a-service/local-development/http-server.md">Eve service template</a></li>
+<li><a href="build-a-service/local-development/app-intro.md">Local development</a></li>
+<li><a href="build-a-service/local-development/create-a-request.md">Create a request</a></li>
+<li><a href="build-a-service/local-development/create-a-new-event.md">Create a new event</a></li>
+<li><a href="build-a-service/local-development/send-an-event.md">Send an event</a></li>
+<li><a href="build-a-service/local-development/receive-an-event.md">Receive an event</a></li>
+<li><a href="build-a-service/local-development/working-with-the-monolith.md">Working with the Monolith</a></li>
+</ul>
+</li>
+<li><a href="build-a-service/quasar-services/README.md">Quasar Services</a>
+<ul>
+<li><a href="build-a-service/quasar-services/stateless-vs-stateful.md">Stateless vs Stateful</a></li>
+<li><a href="build-a-service/quasar-services/microservices.md">Microservices</a></li>
+<li><a href="build-a-service/quasar-services/domain-services.md">Domain Services</a></li>
+<li><a href="build-a-service/quasar-services/domain-driven-design/README.md">Domain Driven Design</a>
+<ul>
+<li><a href="build-a-service/quasar-services/domain-driven-design/bounded-context.md">Bounded Context</a></li>
+<li><a href="build-a-service/quasar-services/domain-driven-design/authoritative-context.md">Authoritative Context</a></li>
+<li><a href="build-a-service/quasar-services/domain-driven-design/tenancy.md">Tenancy</a></li>
+<li><a href="build-a-service/quasar-services/domain-driven-design/event-sourcing.md">Event Sourcing</a></li>
+<li><a href="build-a-service/quasar-services/domain-driven-design/cqrs.md">CQRS</a></li>
+</ul>
+</li>
+<li><a href="build-a-service/quasar-services/the-12-factor-app.md">The 12 Factor App</a></li>
+</ul>
+</li>
+<li><a href="build-a-service/containers/README.md">Containers</a>
+<ul>
+<li><a href="build-a-service/containers/docker.md">Docker</a></li>
+<li><a href="build-a-service/containers/docker-compose.md">Docker Compose</a></li>
+<li><a href="build-a-service/containers/container-registries.md">Container Registries</a></li>
+</ul>
+</li>
+<li><a href="build-a-service/json/README.md">Messaging</a>
+<ul>
+<li><a href="build-a-service/json/the-monolith.md">The monolith</a></li>
+<li><a href="build-a-service/json/message-bus.md">Message bus</a></li>
+<li><a href="build-a-service/json/public-gateway.md">Public gateway</a></li>
+<li><a href="build-a-service/json/service-gateway.md">Service gateway</a></li>
+<li><a href="build-a-service/json/protobuf.md">Protobuf</a></li>
+<li><a href="build-a-service/json/grpc.md">gRPC</a></li>
+<li><a href="build-a-service/json/quasar-primitives/README.md">Quasar Primitives</a>
+<ul>
+<li><a href="build-a-service/json/quasar-primitives/events.md">Events</a></li>
+<li><a href="build-a-service/json/quasar-primitives/requests.md">Requests</a></li>
+<li><a href="build-a-service/json/quasar-primitives/notices.md">Notices</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="deploy-a-service">Deploy a service</h2>
+<ul>
+<li><a href="deploy-a-service/deploy-a-service.md">Deploy a service</a></li>
+</ul>
+<hr>
+<ul>
+<li><a href="logging-and-tracing/README.md">Logging and Tracing</a></li>
+<li><a href="deploying/README.md">Deploying</a>
+<ul>
+<li><a href="deploying/create-a-new-project.md">Create a new project</a></li>
+<li><a href="deploying/kubernetes/README.md">Kubernetes</a>
+<ul>
+<li><a href="deploying/kubernetes/pods.md">Pods</a></li>
+<li><a href="deploying/kubernetes/nodes.md">Nodes</a></li>
+<li><a href="deploying/kubernetes/deployments.md">Deployments</a></li>
+<li><a href="deploying/kubernetes/services.md">Services</a></li>
+<li><a href="deploying/kubernetes/replicasets.md">Replicasets</a></li>
+<li><a href="deploying/kubernetes/statefulsets.md">Statefulsets</a></li>
+<li><a href="deploying/kubernetes/persistant-volumes.md">Persistant Volumes</a></li>
+</ul>
+</li>
+<li><a href="deploying/dev-test-and-live.md">Dev, test, and live</a></li>
+<li><a href="deploying/prometheus.md">Prometheus</a></li>
+<li><a href="deploying/grafana.md">Grafana</a></li>
+<li><a href="logging-and-tracing/sentry.md">Sentry</a></li>
+<li><a href="logging-and-tracing/honeycomb.md">Honeycomb</a></li>
+<li><a href="deploying/vault.md">Vault</a></li>
+<li><a href="deploying/terraform.md">Terraform</a></li>
+</ul>
+</li>
+<li><a href="deploy-a-service-1.md">Deploy a service</a></li>
+</ul>
+<h2 id="topics">Topics</h2>
+<ul>
+<li><a href="topics/postgresql.md">PostgreSQL</a></li>
+<li><a href="topics/topics.md">Redis</a></li>
+</ul>
+<hr>
+<ul>
+<li><a href="faq.md">FAQ</a></li>
+</ul>
+<h2 id="scratch">Scratch</h2>
+<ul>
+<li><a href="scratch/snippets.md">Snippets</a></li>
+</ul>
 
         <div class="section-index">
     
