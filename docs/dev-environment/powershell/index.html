@@ -4,8 +4,6 @@
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="generator" content="Hugo 0.89.4" />
-<link rel="alternate" type="text/html" href="https://slashgeek.org/quasar/concepts/_print/">
-<link rel="alternate" type="application/rss&#43;xml" href="https://slashgeek.org/quasar/concepts/index.xml">
 <meta name="robots" content="index, follow">
 
 
@@ -20,20 +18,25 @@
 <link rel="icon" type="image/png" href="/quasar/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/quasar/favicons/android-192x192.png" sizes="192x192">
 
-<title>Concepts | </title>
-<meta name="description" content="What does your user need to understand about your project in order to use it - or potentially contribute to it? 
+<title>Powershell | </title>
+<meta name="description" content="microsoft&#39;s cross-platform command-line shell and cmdlet scripting language 
 ">
-<meta property="og:title" content="Concepts" />
-<meta property="og:description" content="What does your user need to understand about your project in order to use it - or potentially contribute to it? 
+<meta property="og:title" content="Powershell" />
+<meta property="og:description" content="microsoft&#39;s cross-platform command-line shell and cmdlet scripting language 
 " />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://slashgeek.org/quasar/concepts/" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://slashgeek.org/quasar/dev-environment/powershell/" /><meta property="article:section" content="DEV ENVIRONMENT" />
 
-<meta itemprop="name" content="Concepts">
-<meta itemprop="description" content="What does your user need to understand about your project in order to use it - or potentially contribute to it? 
-"><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Concepts"/>
-<meta name="twitter:description" content="What does your user need to understand about your project in order to use it - or potentially contribute to it? 
+
+
+<meta itemprop="name" content="Powershell">
+<meta itemprop="description" content="microsoft&#39;s cross-platform command-line shell and cmdlet scripting language 
+">
+
+<meta itemprop="wordCount" content="285">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Powershell"/>
+<meta name="twitter:description" content="microsoft&#39;s cross-platform command-line shell and cmdlet scripting language 
 "/>
 
 
@@ -63,7 +66,7 @@ if (!doNotTrack) {
 <script async src='https://www.google-analytics.com/analytics.js'></script>
 
   </head>
-  <body class="td-section">
+  <body class="td-page">
     <header>
       
 <nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
@@ -85,7 +88,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/quasar/offline-search-index.7f06e8133057589be4c328b1378e4229.json"
+  data-offline-search-index-json-src="/quasar/offline-search-index.b2caafea700e74bd21a9b5168a4cd72a.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -99,6 +102,7 @@ if (!doNotTrack) {
           <aside class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
             
 <div id="td-sidebar-menu" class="td-sidebar__inner">
+  <div id="content-mobile">
   <form class="td-sidebar__search d-flex align-items-center">
     <input
   type="search"
@@ -107,7 +111,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/quasar/offline-search-index.7f06e8133057589be4c328b1378e4229.json"
+  data-offline-search-index-json-src="/quasar/offline-search-index.b2caafea700e74bd21a9b5168a4cd72a.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -115,69 +119,28 @@ if (!doNotTrack) {
     <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ml-3 fas fa-bars" type="button" data-toggle="collapse" data-target="#td-section-nav" aria-controls="td-docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
     </button>
   </form>
+  </div>
+  <div id="content-desktop"></div>
   <nav class="collapse td-sidebar-nav" id="td-section-nav">
     <ul class="td-sidebar-nav__section pr-md-3 ul-0">
       <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-quasar-li">
   <a href="/quasar/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-quasar"><span class="">Introduction</span></a>
   <ul class="ul-1">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-quasardev-environment-li">
-  <a href="/quasar/dev-environment/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-quasardev-environment"><span class="">Command line</span></a>
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-quasardev-environment-li">
+  <a href="/quasar/dev-environment/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-quasardev-environment"><span class="">DEV ENVIRONMENT</span></a>
   <ul class="ul-2 foldable">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-quasardev-environmentexample-page-li">
-  <a href="/quasar/dev-environment/example-page/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-quasardev-environmentexample-page"><span class="">Example Page</span></a>
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-quasardev-environmentwindows-terminal-li">
+  <a href="/quasar/dev-environment/windows-terminal/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-quasardev-environmentwindows-terminal"><span class="">Windows Terminal</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-quasardev-environmentwinget-li">
+  <a href="/quasar/dev-environment/winget/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-quasardev-environmentwinget"><span class="">Winget</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-quasardev-environmentpowershell-li">
+  <a href="/quasar/dev-environment/powershell/" class="align-left pl-0 active td-sidebar-link td-sidebar-link__page" id="m-quasardev-environmentpowershell"><span class="td-sidebar-nav-active-item">Powershell</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-quasardev-environmentgo-li">
+  <a href="/quasar/dev-environment/go/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-quasardev-environmentgo"><span class="">Go</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-quasardev-environmentgoland-li">
+  <a href="/quasar/dev-environment/goland/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-quasardev-environmentgoland"><span class="">Goland</span></a>
 </li>
   </ul>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-quasaroverview-li">
-  <a href="/quasar/overview/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-quasaroverview"><span class="">Overview</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-quasargetting-started-li">
-  <a href="/quasar/getting-started/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-quasargetting-started"><span class="">Getting Started</span></a>
-  <ul class="ul-2 foldable">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-quasargetting-startedgo-li">
-  <a href="/quasar/getting-started/go/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-quasargetting-startedgo"><span class="">Go</span></a>
-</li>
-  </ul>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-quasarexamples-li">
-  <a href="/quasar/examples/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-quasarexamples"><span class="">Examples</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-quasarconcepts-li">
-  <a href="/quasar/concepts/" class="align-left pl-0 active td-sidebar-link td-sidebar-link__section" id="m-quasarconcepts"><span class="td-sidebar-nav-active-item">Concepts</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-quasartasks-li">
-  <a href="/quasar/tasks/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-quasartasks"><span class="">Core Tasks</span></a>
-  <ul class="ul-2 foldable">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-quasartasksbeds-li">
-  <a href="/quasar/tasks/beds/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-quasartasksbeds"><span class="">Bed and Chair Metrics</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-quasartasksporridge-li">
-  <a href="/quasar/tasks/porridge/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-quasartasksporridge"><span class="">Porridge Assessment</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-quasartaskstask-li">
-  <a href="/quasar/tasks/task/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-quasartaskstask"><span class="">Another Task</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-quasartasksponycopters-li">
-  <a href="/quasar/tasks/ponycopters/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-quasartasksponycopters"><span class="">Working with Ponycopters</span></a>
-  <ul class="ul-3 foldable">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-quasartasksponycoptersconfiguring-ponycopters-li">
-  <a href="/quasar/tasks/ponycopters/configuring-ponycopters/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-quasartasksponycoptersconfiguring-ponycopters"><span class="">Configuring Ponycopters</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-quasartasksponycopterslaunching-ponycopters-li">
-  <a href="/quasar/tasks/ponycopters/launching-ponycopters/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-quasartasksponycopterslaunching-ponycopters"><span class="">Launching Ponycopters</span></a>
-</li>
-  </ul>
-</li>
-  </ul>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-quasartutorials-li">
-  <a href="/quasar/tutorials/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-quasartutorials"><span class="">Tutorials</span></a>
-  <ul class="ul-2 foldable">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-quasartutorialsmulti-bear-li">
-  <a href="/quasar/tutorials/multi-bear/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-quasartutorialsmulti-bear"><span class="">Multi-Bear Domicile Setup</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-quasartutorialstutorial2-li">
-  <a href="/quasar/tutorials/tutorial2/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-quasartutorialstutorial2"><span class="">Another Tutorial</span></a>
-</li>
-  </ul>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-quasarreference-li">
-  <a href="/quasar/reference/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-quasarreference"><span class="">Reference</span></a>
-  <ul class="ul-2 foldable">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-quasarreferenceparameter-reference-li">
-  <a href="/quasar/reference/parameter-reference/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-quasarreferenceparameter-reference"><span class="">Parameter Reference</span></a>
-</li>
-  </ul>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-quasarcontribution-guidelines-li">
-  <a href="/quasar/contribution-guidelines/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-quasarcontribution-guidelines"><span class="">Contribution Guidelines</span></a>
 </li>
   </ul>
 </li>
@@ -191,6 +154,14 @@ if (!doNotTrack) {
             
 
 
+<div class="td-toc"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#update-powershell">Update PowerShell</a></li>
+    <li><a href="#update-the-default-powershell-profile">Update the default PowerShell profile</a></li>
+    <li><a href="#shell-and-terminal-defaults">Shell and terminal defaults</a></li>
+  </ul>
+</nav></div>
+
 
 
             
@@ -202,8 +173,8 @@ if (!doNotTrack) {
             
             
 <div class="td-content">
-	<h1>Concepts</h1>
-  <div class="lead">What does your user need to understand about your project in order to use it - or potentially contribute to it?</div>
+	<h1>Powershell</h1>
+	<div class="lead">microsoft&rsquo;s cross-platform command-line shell and cmdlet scripting language</div>
 	<header class="article-meta">
 		
 		
@@ -215,47 +186,27 @@ if (!doNotTrack) {
 				
 
 
-<div class="taxonomy taxonomy-terms-article taxo-tags">
-  <h5 class="taxonomy-title">Tags:</h5>
-  <ul class="taxonomy-terms">
-    
-      <li><a class="taxonomy-term" href="https://slashgeek.org/quasar/tags/intro/" data-taxonomy-term="intro"><span class="taxonomy-label">intro</span></a></li>
-    
-      <li><a class="taxonomy-term" href="https://slashgeek.org/quasar/tags/concepts/" data-taxonomy-term="concepts"><span class="taxonomy-label">concepts</span></a></li>
-    
-  </ul>
-</div>
-
 			
 		
 		
-	</header>
-	
-
-<div class="pageinfo pageinfo-primary">
-<p>This is a placeholder page that shows you how to use this template site.</p>
-
-</div>
-
-<p>For many projects, users may not need much information beyond the information in the <a href="/docs/overview/">Overview</a>, so this section is <strong>optional</strong>. However if there are areas where your users will need a more detailed understanding of a given term or feature in order to do anything useful with your project (or to not make mistakes when using it) put that information in this section. For example, you may want to add some conceptual pages if you have a large project with many components and a complex architecture.</p>
-<p>Remember to focus on what the user needs to know, not just what you think is interesting about your project! If they don’t need to understand your original design decisions to use or contribute to the project, don’t put them in, or include your design docs in your repo and link to them. Similarly, most users will probably need to know more about how features work when in use rather than how they are implemented. Consider a separate architecture page for more detailed implementation and system design information that potential project contributors can consult.</p>
-
-        <div class="section-index">
-    
-    
-    
-    
-    
-    
-    
-    
-    
-</div>
+	</header>    
+	<p>Finally, we need to decide on a shell to use within our terminal environment. Since this guide assumes you are using Windows we will stick with Microsoft&rsquo;s default PowerShell environment for now. Other options available include Microsoft&rsquo;s Windows Subsystem for Linux (WSL) and the version of the classic Linux BASH shell installed along with Git. These other options all involve additional setup, however, and come with various limitations and caveats in addition to the advantages they provide in some scenarios.</p>
+<h2 id="update-powershell">Update PowerShell</h2>
+<p>An older version of PowerShell called, confusingly, Windows PowerShell is included by default when Windows is installed and can not be upgraded or uninstalled. It is also locked-down by default as it is intended for system administration. You can use this version if you prefer but to do so and follow along with this guide you will need to loosen these restrictions for the current user by executing the command <code>Set-ExecutionPolicy RemoteSigned -Scope CurrentUser</code></p>
+<p>To use the latest release version of PowerShell you can install it using winget :</p>
+<pre tabindex="0"><code>winget install Microsoft.PowerShell
+</code></pre><h2 id="update-the-default-powershell-profile">Update the default PowerShell profile</h2>
+<p>While there are some amazingly functional and visually appealing ways to <a href="https://www.hanselman.com/blog/my-ultimate-powershell-prompt-with-oh-my-posh-and-the-windows-terminal">customize your PowerShell prompt</a> we are going to simply update ours using a small script that will display the Git branch associated with the current directory if it is under source control. This will help us determine at a glance if we are working in the correct branch.</p>
+<pre tabindex="0"><code>Invoke-WebRequest -Uri &quot;https://git.io/JXGyz&quot; -OutFile $PROFILE
+</code></pre><h2 id="shell-and-terminal-defaults">Shell and terminal defaults</h2>
+<p>To load the latest version of PowerShell by default and / or configure Windows Terminal as your default terminal application navigate to the _Settings _tab in Windows Terminal using the shortcut <code>Ctrl-,</code> and set the following values:</p>
+<p><code>![](../.gitbook/assets/WindowsTerminal-Defaults.png)</code></p>
 
 	
 	
 	
 </div>
+
 
           </main>
         </div>

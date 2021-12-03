@@ -1,14 +1,14 @@
 ---
 title: "Go"
 linkTitle: "Go"
-date: 2017-01-05
+weight: 5
 description: >-
   a modern statically typed language for creating high-performance networked applications
 ---
 
-{% hint style="info" %}
+{{% pageinfo %}}
 Go is often referred to as _Golang_ which also happens to be easier to Google!
-{% endhint %}
+{{% /pageinfo %}}
 
 ## Why Go?
 
@@ -16,7 +16,7 @@ Go is a modern, statically typed, general purpose programming language developed
 
 Go is popular because it made a number of design choices intended to make it easy to learn and the systems produced using it easy to maintain. To this end ...
 
-* Go has only 25 keywords and useful systems can be built using just the standard library which itself is performant and capable.&#x20;
+* Go has only 25 keywords and useful systems can be built using just the standard library which itself is performant and capable.
 * Go compiles very quickly enabling rapid feedback and tight developer iteration loops.
 * Go offers a backward compatibility promise. Go's designers have promised that Go code written 5 years ago will still build.
 * With respect to testing, benchmarking, linting, and deployment GO'S tooling is both built-in and first class.
@@ -71,9 +71,9 @@ for a quick run-down kick-back and watch 100 seconds of go
 
 Adding module support to a project is pretty straightforward. Select any folder as the root of the module and execute `go mod init <modulepath>`
 
-This process generates a `go.mod` file containing the module's path, Go version, and list of its dependencies. The `go.mod` file also often contains a URL indicating where the code for the module is available. This is often a reference to the project's repository on github.com. To learn more about modules [check out the documentation](https://golang.org/doc/modules/gomod-ref).&#x20;
+This process generates a `go.mod` file containing the module's path, Go version, and list of its dependencies. The `go.mod` file also often contains a URL indicating where the code for the module is available. This is often a reference to the project's repository on github.com. To learn more about modules [check out the documentation](https://golang.org/doc/modules/gomod-ref).
 
-If no `<modulepath>` is specified `go mod init` will infer it based on the the name of the current folder. Here is an example of this process executed from the command line :&#x20;
+If no `<modulepath>` is specified `go mod init` will infer it based on the the name of the current folder. Here is an example of this process executed from the command line :
 
 ```
 mkdir my-project
@@ -89,7 +89,7 @@ module my-project
 go 1.17
 ```
 
-The `go` command's built-in documentation provides an overview of all available `go mod` and other `go <subcommand>` subcommands which you can access using `go help` from the command line like so :&#x20;
+The `go` command's built-in documentation provides an overview of all available `go mod` and other `go <subcommand>` subcommands which you can access using `go help` from the command line like so :
 
 ```
 go help mod

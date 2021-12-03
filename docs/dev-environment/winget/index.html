@@ -4,9 +4,7 @@
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="generator" content="Hugo 0.89.4" />
-<link rel="canonical" type="text/html" href="https://slashgeek.org/quasar/concepts/">
-<link rel="alternate" type="application/rss&#43;xml" href="https://slashgeek.org/quasar/concepts/index.xml">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 
 
 <link rel="shortcut icon" href="/quasar/favicons/favicon.ico" >
@@ -20,20 +18,25 @@
 <link rel="icon" type="image/png" href="/quasar/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/quasar/favicons/android-192x192.png" sizes="192x192">
 
-<title>Concepts | </title>
-<meta name="description" content="What does your user need to understand about your project in order to use it - or potentially contribute to it? 
+<title>Winget | </title>
+<meta name="description" content="discover, install, and manage applications from the command-line
 ">
-<meta property="og:title" content="Concepts" />
-<meta property="og:description" content="What does your user need to understand about your project in order to use it - or potentially contribute to it? 
+<meta property="og:title" content="Winget" />
+<meta property="og:description" content="discover, install, and manage applications from the command-line
 " />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://slashgeek.org/quasar/concepts/" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://slashgeek.org/quasar/dev-environment/winget/" /><meta property="article:section" content="DEV ENVIRONMENT" />
 
-<meta itemprop="name" content="Concepts">
-<meta itemprop="description" content="What does your user need to understand about your project in order to use it - or potentially contribute to it? 
-"><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Concepts"/>
-<meta name="twitter:description" content="What does your user need to understand about your project in order to use it - or potentially contribute to it? 
+
+
+<meta itemprop="name" content="Winget">
+<meta itemprop="description" content="discover, install, and manage applications from the command-line
+">
+
+<meta itemprop="wordCount" content="165">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Winget"/>
+<meta name="twitter:description" content="discover, install, and manage applications from the command-line
 "/>
 
 
@@ -63,7 +66,7 @@ if (!doNotTrack) {
 <script async src='https://www.google-analytics.com/analytics.js'></script>
 
   </head>
-  <body class="td-section">
+  <body class="td-page">
     <header>
       
 <nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
@@ -85,7 +88,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/quasar/offline-search-index.7f06e8133057589be4c328b1378e4229.json"
+  data-offline-search-index-json-src="/quasar/offline-search-index.b2caafea700e74bd21a9b5168a4cd72a.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -96,92 +99,113 @@ if (!doNotTrack) {
     <div class="container-fluid td-outer">
       <div class="td-main">
         <div class="row flex-xl-nowrap">
-          <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
+          <aside class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+            
+<div id="td-sidebar-menu" class="td-sidebar__inner">
+  <div id="content-mobile">
+  <form class="td-sidebar__search d-flex align-items-center">
+    <input
+  type="search"
+  class="form-control td-search-input"
+  placeholder="&#xf002; Search this site…"
+  aria-label="Search this site…"
+  autocomplete="off"
+  
+  data-offline-search-index-json-src="/quasar/offline-search-index.b2caafea700e74bd21a9b5168a4cd72a.json"
+  data-offline-search-base-href="/"
+  data-offline-search-max-results="10"
+>
+
+    <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ml-3 fas fa-bars" type="button" data-toggle="collapse" data-target="#td-section-nav" aria-controls="td-docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    </button>
+  </form>
+  </div>
+  <div id="content-desktop"></div>
+  <nav class="collapse td-sidebar-nav" id="td-section-nav">
+    <ul class="td-sidebar-nav__section pr-md-3 ul-0">
+      <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-quasar-li">
+  <a href="/quasar/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-quasar"><span class="">Introduction</span></a>
+  <ul class="ul-1">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-quasardev-environment-li">
+  <a href="/quasar/dev-environment/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-quasardev-environment"><span class="">DEV ENVIRONMENT</span></a>
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-quasardev-environmentwindows-terminal-li">
+  <a href="/quasar/dev-environment/windows-terminal/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-quasardev-environmentwindows-terminal"><span class="">Windows Terminal</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-quasardev-environmentwinget-li">
+  <a href="/quasar/dev-environment/winget/" class="align-left pl-0 active td-sidebar-link td-sidebar-link__page" id="m-quasardev-environmentwinget"><span class="td-sidebar-nav-active-item">Winget</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-quasardev-environmentpowershell-li">
+  <a href="/quasar/dev-environment/powershell/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-quasardev-environmentpowershell"><span class="">Powershell</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-quasardev-environmentgo-li">
+  <a href="/quasar/dev-environment/go/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-quasardev-environmentgo"><span class="">Go</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-quasardev-environmentgoland-li">
+  <a href="/quasar/dev-environment/goland/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-quasardev-environmentgoland"><span class="">Goland</span></a>
+</li>
+  </ul>
+</li>
+  </ul>
+</li>
+    </ul>
+  </nav>
+</div>
+
+          </aside>
+          <aside class="d-none d-xl-block col-xl-2 td-sidebar-toc d-print-none">
+            
             
 
 
 
 
+            
+          </aside>
+          <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
+            
+  
+
+            
+            
 <div class="td-content">
-<div class="pageinfo pageinfo-primary d-print-none">
-<p>
-This is the multi-page printable view of this section.
-<a href="#" onclick="print();return false;">Click here to print</a>.
-</p><p>
-<a href="/quasar/concepts/">Return to the regular view of this page</a>.
-</p>
-</div>
+	<h1>Winget</h1>
+	<div class="lead">discover, install, and manage applications from the command-line</div>
+	<header class="article-meta">
+		
+		
+			
+				
 
 
-
-<h1 class="title">Concepts</h1>
-<div class="lead">What does your user need to understand about your project in order to use it - or potentially contribute to it?</div>
-
+			
+				
 
 
-
-    <ul>
-    
-  
-  
-  
-  
-
-  
-
-    </ul>
-
-
-<div class="content">
-      
+			
+		
+		
+	</header>    
+	
 
 <div class="pageinfo pageinfo-primary">
-<p>This is a placeholder page that shows you how to use this template site.</p>
+<p>Winget is installed by default with Windows 11</p>
 
 </div>
 
-<p>For many projects, users may not need much information beyond the information in the <a href="/docs/overview/">Overview</a>, so this section is <strong>optional</strong>. However if there are areas where your users will need a more detailed understanding of a given term or feature in order to do anything useful with your project (or to not make mistakes when using it) put that information in this section. For example, you may want to add some conceptual pages if you have a large project with many components and a complex architecture.</p>
-<p>Remember to focus on what the user needs to know, not just what you think is interesting about your project! If they don’t need to understand your original design decisions to use or contribute to the project, don’t put them in, or include your design docs in your repo and link to them. Similarly, most users will probably need to know more about how features work when in use rather than how they are implemented. Consider a separate architecture page for more detailed implementation and system design information that potential project contributors can consult.</p>
+<p>We are also going to need a package manager. What is a package manager you ask? Well, it&rsquo;s an application you use from the command line to install, upgrade, and remove applications. If you have heard of chocolatey it&rsquo;s like that but made by Microsoft. If you come from the Mac world you can think of it as a Windows version of homebrew.</p>
+<p>To install <code>winget</code> browse to its release page on GitHub, download the latest <strong>.msixbundle</strong> file, then double-click it. Make sure the version you download is marked <strong>latest release</strong> and isn&rsquo;t an old or preview release.</p>
+<p><a href="https://github.com/microsoft/winget-cli/releases">Download WinGet</a></p>
+<h2 id="upgrading-packages">Upgrading packages</h2>
+<p>You can update any app installed with winget to the latest version with the command <code>winget upgrade &lt;package&gt;</code></p>
+<p>The command <code>winget list &lt;package&gt;</code> will report the version currently installed and whether an upgrade is available. You can also run <code>winget list</code> without specifying a package to check if upgrades are available for any installed package.</p>
 
+	
+	
+	
 </div>
-</div>
-
-
-  
-  
-  
-  
-
-  
-  
-
-  
-
 
 
           </main>
         </div>
       </div>
       
-<footer class="bg-dark py-5 row d-print-none">
-  <div class="container-fluid mx-sm-5">
-    <div class="row">
-      <div class="col-6 col-sm-4 text-xs-center order-sm-2">
-        
-      </div>
-      <div class="col-6 col-sm-4 text-right text-xs-center order-sm-3">
-        
-      </div>
-      <div class="col-12 col-sm-4 text-center py-2 order-sm-2">
-        <small class="text-white">&copy; 2021 CCP ehf. All Rights Reserved</small>
-        <small class="ml-1"><a href="https://www.ccpgames.com/privacy-policy" target="_blank" rel="noopener">Privacy Policy</a></small>
-	
-      </div>
-    </div>
-  </div>
-</footer>
-
-
     </div>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
     integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"

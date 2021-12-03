@@ -24,13 +24,13 @@
 <meta property="og:description" content="a modern statically typed language for creating high-performance networked applications" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://slashgeek.org/quasar/dev-environment/go/" /><meta property="article:section" content="DEV ENVIRONMENT" />
-<meta property="article:published_time" content="2017-01-05T00:00:00+00:00" />
-<meta property="article:modified_time" content="2017-01-05T00:00:00+00:00" />
+
+
 
 <meta itemprop="name" content="Go">
-<meta itemprop="description" content="a modern statically typed language for creating high-performance networked applications"><meta itemprop="datePublished" content="2017-01-05T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2017-01-05T00:00:00+00:00" />
-<meta itemprop="wordCount" content="775">
+<meta itemprop="description" content="a modern statically typed language for creating high-performance networked applications">
+
+<meta itemprop="wordCount" content="768">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Go"/>
 <meta name="twitter:description" content="a modern statically typed language for creating high-performance networked applications"/>
@@ -84,7 +84,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/quasar/offline-search-index.a8dec5d136e0c350367ebb8b5f6be693.json"
+  data-offline-search-index-json-src="/quasar/offline-search-index.b2caafea700e74bd21a9b5168a4cd72a.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -107,7 +107,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/quasar/offline-search-index.a8dec5d136e0c350367ebb8b5f6be693.json"
+  data-offline-search-index-json-src="/quasar/offline-search-index.b2caafea700e74bd21a9b5168a4cd72a.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -123,9 +123,15 @@ if (!doNotTrack) {
   <a href="/quasar/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-quasar"><span class="">Introduction</span></a>
   <ul class="ul-1">
     <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-quasardev-environment-li">
-  <a href="/quasar/dev-environment/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-quasardev-environment"><span class="">Command line</span></a>
+  <a href="/quasar/dev-environment/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-quasardev-environment"><span class="">DEV ENVIRONMENT</span></a>
   <ul class="ul-2 foldable">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-quasardev-environmentgo-li">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-quasardev-environmentwindows-terminal-li">
+  <a href="/quasar/dev-environment/windows-terminal/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-quasardev-environmentwindows-terminal"><span class="">Windows Terminal</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-quasardev-environmentwinget-li">
+  <a href="/quasar/dev-environment/winget/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-quasardev-environmentwinget"><span class="">Winget</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-quasardev-environmentpowershell-li">
+  <a href="/quasar/dev-environment/powershell/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-quasardev-environmentpowershell"><span class="">Powershell</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-quasardev-environmentgo-li">
   <a href="/quasar/dev-environment/go/" class="align-left pl-0 active td-sidebar-link td-sidebar-link__page" id="m-quasardev-environmentgo"><span class="td-sidebar-nav-active-item">Go</span></a>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-quasardev-environmentgoland-li">
   <a href="/quasar/dev-environment/goland/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-quasardev-environmentgoland"><span class="">Goland</span></a>
@@ -182,14 +188,18 @@ if (!doNotTrack) {
 		
 		
 	</header>    
-	<p>{% hint style=&ldquo;info&rdquo; %}
-Go is often referred to as <em>Golang</em> which also happens to be easier to Google!
-{% endhint %}</p>
+	
+
+<div class="pageinfo pageinfo-primary">
+<p>Go is often referred to as <em>Golang</em> which also happens to be easier to Google!</p>
+
+</div>
+
 <h2 id="why-go">Why Go?</h2>
 <p>Go is a modern, statically typed, general purpose programming language developed by Google to create reliable and efficient network applications. It&rsquo;s syntax is similar to C and it attempts to combine the high-performance of a low-level language like C with the productivity and convenience of high-level languages like Python. It features garbage collection, fast build times, type inference, and first-class support for &ldquo;goroutines&rdquo;, lightweight <a href="https://en.wikipedia.org/wiki/Coroutine">coroutines</a> that lend themselves to building highly concurrent network services. Go was open-sourced by Google in 2012.</p>
 <p>Go is popular because it made a number of design choices intended to make it easy to learn and the systems produced using it easy to maintain. To this end &hellip;</p>
 <ul>
-<li>Go has only 25 keywords and useful systems can be built using just the standard library which itself is performant and capable. </li>
+<li>Go has only 25 keywords and useful systems can be built using just the standard library which itself is performant and capable.</li>
 <li>Go compiles very quickly enabling rapid feedback and tight developer iteration loops.</li>
 <li>Go offers a backward compatibility promise. Go&rsquo;s designers have promised that Go code written 5 years ago will still build.</li>
 <li>With respect to testing, benchmarking, linting, and deployment GO&rsquo;S tooling is both built-in and first class.</li>
@@ -218,8 +228,8 @@ for a quick run-down kick-back and watch 100 seconds of go
 <h2 id="go-modules">Go modules</h2>
 <p><a href="https://golang.org/ref/mod#introduction">Go modules</a> aim to help solve problems related to dependency management, version selection, and reproducible builds.</p>
 <p>Adding module support to a project is pretty straightforward. Select any folder as the root of the module and execute <code>go mod init &lt;modulepath&gt;</code></p>
-<p>This process generates a <code>go.mod</code> file containing the module&rsquo;s path, Go version, and list of its dependencies. The <code>go.mod</code> file also often contains a URL indicating where the code for the module is available. This is often a reference to the project&rsquo;s repository on github.com. To learn more about modules <a href="https://golang.org/doc/modules/gomod-ref">check out the documentation</a>. </p>
-<p>If no <code>&lt;modulepath&gt;</code> is specified <code>go mod init</code> will infer it based on the the name of the current folder. Here is an example of this process executed from the command line : </p>
+<p>This process generates a <code>go.mod</code> file containing the module&rsquo;s path, Go version, and list of its dependencies. The <code>go.mod</code> file also often contains a URL indicating where the code for the module is available. This is often a reference to the project&rsquo;s repository on github.com. To learn more about modules <a href="https://golang.org/doc/modules/gomod-ref">check out the documentation</a>.</p>
+<p>If no <code>&lt;modulepath&gt;</code> is specified <code>go mod init</code> will infer it based on the the name of the current folder. Here is an example of this process executed from the command line :</p>
 <pre tabindex="0"><code>mkdir my-project
 cd my-project
 go mod init my-project
@@ -227,7 +237,7 @@ go mod init my-project
 <pre tabindex="0"><code>module my-project
 
 go 1.17
-</code></pre><p>The <code>go</code> command&rsquo;s built-in documentation provides an overview of all available <code>go mod</code> and other <code>go &lt;subcommand&gt;</code> subcommands which you can access using <code>go help</code> from the command line like so : </p>
+</code></pre><p>The <code>go</code> command&rsquo;s built-in documentation provides an overview of all available <code>go mod</code> and other <code>go &lt;subcommand&gt;</code> subcommands which you can access using <code>go help</code> from the command line like so :</p>
 <pre tabindex="0"><code>go help mod
 go help mod init
 </code></pre><p>{% hint style=&ldquo;info&rdquo; %}

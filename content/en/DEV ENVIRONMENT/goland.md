@@ -1,16 +1,16 @@
 ---
 title: "Goland"
 linkTitle: "Goland"
-date: 2017-01-05
+weight: 6
 description: >-
   jetbrains' go ide
 ---
 
 ## Installation
 
-Chances are if you have used Jetbrains' PyCharm for Python development you are going to feel right at home using Jetbrains' [Goland](https://www.jetbrains.com/go/) for Go development.&#x20;
+Chances are if you have used Jetbrains' PyCharm for Python development you are going to feel right at home using Jetbrains' [Goland](https://www.jetbrains.com/go/) for Go development.
 
-You can request a license from IT [here](https://wiki.ccpgames.com/display/C/Central+Home/#). In the meantime, you can install Goland and use the default 30-day trial license by issuing the following commands. The first line downloads a file containing a few opinionated configuration options which we then supply to `winget` as an override to the Goland package's default installation settings.&#x20;
+You can request a license from IT [here](https://wiki.ccpgames.com/display/C/Central+Home/#). In the meantime, you can install Goland and use the default 30-day trial license by issuing the following commands. The first line downloads a file containing a few opinionated configuration options which we then supply to `winget` as an override to the Goland package's default installation settings.
 
 ```powershell
 Invoke-WebRequest -Uri "https://git.io/JXGyH" -OutFile "goland.config"
@@ -20,13 +20,13 @@ winget install Jetbrains.GoLand --override '/S /CONFIG="goland.config"'
 
 To launch Goland from PowerShell and open a project in the current directory just type :
 
-&#x20;`goland .`
+`goland .`
 
 Now that Goland is up and running we will configure it to use a few additional tools designed to help insure our code conforms to best practices as assessed by the various [linters](https://en.wikipedia.org/wiki/Lint\_\(software\)) that we will encounter a little later in this guide.
 
 ## goimports
 
-The [goimports](https://pkg.go.dev/golang.org/x/tools/cmd/goimports) tool automatically formats your source code to comply with Go's rather strict conventions. It also updates your import statements by removing unreferenced packages and attempting to add any missing imports.&#x20;
+The [goimports](https://pkg.go.dev/golang.org/x/tools/cmd/goimports) tool automatically formats your source code to comply with Go's rather strict conventions. It also updates your import statements by removing unreferenced packages and attempting to add any missing imports.
 
 To configure Goland to run `goimports` whenever a file is saved navigate to the **File** menu and select **Settings**. Then, in the resulting **Settings** window, expand the **Tools** section and select **File Watchers**. Next, click the **+** icon and add **goimports** from the drop-down list. When prompted to configure the tool just accept the defaults.
 
@@ -38,7 +38,7 @@ When you submit code to a project based on the eve service template [golangci-li
 
 To avoid the delays associated with having a remote CI loop inform you there are issues with your code we will install golangci-lint locally so you can run it on demand.
 
-Since golangci-lint is written in Go we can install it using the `go install` command like so :&#x20;
+Since golangci-lint is written in Go we can install it using the `go install` command like so :
 
 ```bash
 go install github.com/golangci/golangci-lint/cmd/golangci-lint@latest
@@ -48,7 +48,7 @@ go install github.com/golangci/golangci-lint/cmd/golangci-lint@latest
 The `go install` command acts a bit like a package manager for Go. By appending a version suffix, in this case `@latest`, we direct go to build a package in module-aware mode, ignoring the go.mod file in the current directory or any parent directory. This is useful for installing executables without affecting the dependencies of the module we are working with.
 {% endhint %}
 
-To configure Goland to run golangci-lint whenever a file is saved navigate to the **File** menu and select **Settings**. Then, in the resulting **Settings** dialog, expand the **Tools** section and select **External Tools**. Next, click the **+** icon and provide the following values :&#x20;
+To configure Goland to run golangci-lint whenever a file is saved navigate to the **File** menu and select **Settings**. Then, in the resulting **Settings** dialog, expand the **Tools** section and select **External Tools**. Next, click the **+** icon and provide the following values :
 
 | Field             | Value                                                        |
 | ----------------- | ------------------------------------------------------------ |
@@ -59,7 +59,7 @@ To configure Goland to run golangci-lint whenever a file is saved navigate to th
 
 ![configure golangci-lint](../.gitbook/assets/golangci-lint.png)
 
-To activate the linter navigate to the **Tools** menu, select **External Tools**, and then click **golangci-lint **:&#x20;
+To activate the linter navigate to the **Tools** menu, select **External Tools**, and then click **golangci-lint **:
 
 ![](../.gitbook/assets/run-golangci-lint.png)
 
@@ -73,53 +73,53 @@ In upcoming sections this guide will often emphasize the importance of refactori
 
 The following operations are so common that we recommended learning the keyboard shortcuts associated with them.
 
-* ****[**Extract variable**](https://blog.jetbrains.com/go/2018/10/26/refactorings-in-goland-extract-and-inline/)
+* [**Extract variable**](https://blog.jetbrains.com/go/2018/10/26/refactorings-in-goland-extract-and-inline/)
 
-  Being able to easily take magic values and assign them to variables helps you simplify your code.&#x20;
+  Being able to easily take magic values and assign them to variables helps you simplify your code.
 
   To accomplish this in Goland highlight a value and use **`ctrl-alt-v`**
 
-* ****[**Extract method or function**](https://www.jetbrains.com/help/go/extract-method.html)
+* [**Extract method or function**](https://www.jetbrains.com/help/go/extract-method.html)
 
   It is important to be able to take a section of code and extract it into a function or method.
 
   To accomplish this in Goland select the expression you want to extract and use **`ctrl-alt-m`**
 
-* ****[**Rename**](https://www.jetbrains.com/help/go/rename-refactorings.html)&#x20;
+* [**Rename**](https://www.jetbrains.com/help/go/rename-refactorings.html)
 
-  You should be able to confidently rename symbols across all files in a project.&#x20;
+  You should be able to confidently rename symbols across all files in a project.
 
   To rename a symbol in Goland position the caret in the symbol and hit **`shift-f6`**
 
-* ****[**go fmt**](https://www.jetbrains.com/help/go/integration-with-go-tools.html#gofmt)&#x20;
+* [**go fmt**](https://www.jetbrains.com/help/go/integration-with-go-tools.html#gofmt)
 
   Go has an opinionated formatter called `go fmt`
 
   We configured Goland to run this on every file save via the goimports command but you can also run it against a single file using **`ctrl-alt-l`**
 
-* ****[**Run tests**](https://www.jetbrains.com/help/go/performing-tests.html)&#x20;
+* [**Run tests**](https://www.jetbrains.com/help/go/performing-tests.html)
 
   You should be able to do any of the above and then quickly re-run your tests to ensure you haven't broken anything.
 
   In Goland you can run a selected test or test folder using the **`ctrl-shift-f10`** shortcut, but what you should _really _do is [create a comprehensive run configuration](https://www.jetbrains.com/help/go/performing-tests.html#run-with-options) for all of your tests.
 
-* ****[**View function signature**](https://www.jetbrains.com/help/go/viewing-reference-information.html#view-quick-docs)&#x20;
+* [**View function signature**](https://www.jetbrains.com/help/go/viewing-reference-information.html#view-quick-docs)
 
-  You should never be unsure how to call a function in Go. Your IDE should readily display its documentation, parameters, what it returns, etc... &#x20;
+  You should never be unsure how to call a function in Go. Your IDE should readily display its documentation, parameters, what it returns, etc... 
 
-  In Goland you can type **`ctrl-q`** with the cursor positioned within the function name or **mouse-hover** over a function call to view that function's signature.&#x20;
+  In Goland you can type **`ctrl-q`** with the cursor positioned within the function name or **mouse-hover** over a function call to view that function's signature.
 
   For [parameter information](https://www.jetbrains.com/help/go/viewing-reference-information.html#view-parameter-info) specifically type **`ctrl-p`** with the cursor positioned within the function's parenthesis.
 
-* ****[**View function definition**](https://www.jetbrains.com/help/idea/navigating-through-the-source-code.html#go\_to\_declaration)&#x20;
+* [**View function definition**](https://www.jetbrains.com/help/idea/navigating-through-the-source-code.html#go\_to\_declaration)
 
-  If it's still not clear what a function does, you should be able to jump to the source code and try and figure it out yourself.&#x20;
+  If it's still not clear what a function does, you should be able to jump to the source code and try and figure it out yourself.
 
   In goland type **`ctrl-b`** with the cursor positioned within the function name or **ctrl-click or middle-click** on the function call to jump to its implementation.
 
-* ****[**Find usages of a symbol**](https://www.jetbrains.com/help/idea/find-highlight-usages.html#find-usages)&#x20;
+* [**Find usages of a symbol**](https://www.jetbrains.com/help/idea/find-highlight-usages.html#find-usages)
 
-  Being able to see the context of a function being called can help you better understand that function.&#x20;
+  Being able to see the context of a function being called can help you better understand that function.
 
   To find usages of a function or other symbol through the current project type **`ctrl-shift-f7`** with the cursor positioned within the symbol's name.
 
