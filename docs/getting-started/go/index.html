@@ -4,8 +4,6 @@
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="generator" content="Hugo 0.89.4" />
-<link rel="alternate" type="text/html" href="https://slashgeek.org/quasar/tasks/_print/">
-<link rel="alternate" type="application/rss&#43;xml" href="https://slashgeek.org/quasar/tasks/index.xml">
 <meta name="robots" content="index, follow">
 
 
@@ -20,21 +18,22 @@
 <link rel="icon" type="image/png" href="/quasar/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/quasar/favicons/android-192x192.png" sizes="192x192">
 
-<title>Core Tasks | </title>
-<meta name="description" content="What can your user do with your project?
-">
-<meta property="og:title" content="Core Tasks" />
-<meta property="og:description" content="What can your user do with your project?
-" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://slashgeek.org/quasar/tasks/" />
+<title>Go | </title>
+<meta name="description" content="a modern statically typed language for creating high-performance networked applications">
+<meta property="og:title" content="Go" />
+<meta property="og:description" content="a modern statically typed language for creating high-performance networked applications" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://slashgeek.org/quasar/getting-started/go/" /><meta property="article:section" content="Getting started" />
+<meta property="article:published_time" content="2017-01-05T00:00:00+00:00" />
+<meta property="article:modified_time" content="2017-01-05T00:00:00+00:00" />
 
-<meta itemprop="name" content="Core Tasks">
-<meta itemprop="description" content="What can your user do with your project?
-"><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Core Tasks"/>
-<meta name="twitter:description" content="What can your user do with your project?
-"/>
+<meta itemprop="name" content="Go">
+<meta itemprop="description" content="a modern statically typed language for creating high-performance networked applications"><meta itemprop="datePublished" content="2017-01-05T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2017-01-05T00:00:00+00:00" />
+<meta itemprop="wordCount" content="775">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Go"/>
+<meta name="twitter:description" content="a modern statically typed language for creating high-performance networked applications"/>
 
 
 
@@ -63,7 +62,7 @@ if (!doNotTrack) {
 <script async src='https://www.google-analytics.com/analytics.js'></script>
 
   </head>
-  <body class="td-section">
+  <body class="td-page">
     <header>
       
 <nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
@@ -129,19 +128,19 @@ if (!doNotTrack) {
   </ul>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-quasaroverview-li">
   <a href="/quasar/overview/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-quasaroverview"><span class="">Overview</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-quasargetting-started-li">
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-quasargetting-started-li">
   <a href="/quasar/getting-started/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-quasargetting-started"><span class="">Getting Started</span></a>
   <ul class="ul-2 foldable">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-quasargetting-startedgo-li">
-  <a href="/quasar/getting-started/go/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-quasargetting-startedgo"><span class="">Go</span></a>
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-quasargetting-startedgo-li">
+  <a href="/quasar/getting-started/go/" class="align-left pl-0 active td-sidebar-link td-sidebar-link__page" id="m-quasargetting-startedgo"><span class="td-sidebar-nav-active-item">Go</span></a>
 </li>
   </ul>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-quasarexamples-li">
   <a href="/quasar/examples/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-quasarexamples"><span class="">Examples</span></a>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-quasarconcepts-li">
   <a href="/quasar/concepts/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-quasarconcepts"><span class="">Concepts</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-quasartasks-li">
-  <a href="/quasar/tasks/" class="align-left pl-0 active td-sidebar-link td-sidebar-link__section" id="m-quasartasks"><span class="td-sidebar-nav-active-item">Core Tasks</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-quasartasks-li">
+  <a href="/quasar/tasks/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-quasartasks"><span class="">Core Tasks</span></a>
   <ul class="ul-2 foldable">
     <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-quasartasksbeds-li">
   <a href="/quasar/tasks/beds/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-quasartasksbeds"><span class="">Bed and Chair Metrics</span></a>
@@ -191,6 +190,16 @@ if (!doNotTrack) {
             
 
 
+<div class="td-toc"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#why-go">Why Go?</a></li>
+    <li><a href="#install-go">Install Go</a></li>
+    <li><a href="#go-modules">Go modules</a></li>
+    <li><a href="#godochttpspkggodevgolangorgxtoolscmdgodoc"><a href="https://pkg.go.dev/golang.org/x/tools/cmd/godoc">Godoc</a></a></li>
+    <li><a href="#additional-resources">Additional resources</a></li>
+  </ul>
+</nav></div>
+
 
 
             
@@ -202,8 +211,8 @@ if (!doNotTrack) {
             
             
 <div class="td-content">
-	<h1>Core Tasks</h1>
-  <div class="lead">What can your user do with your project?</div>
+	<h1>Go</h1>
+	<div class="lead">a modern statically typed language for creating high-performance networked applications</div>
 	<header class="article-meta">
 		
 		
@@ -218,74 +227,70 @@ if (!doNotTrack) {
 			
 		
 		
-	</header>
-	
-
-<div class="pageinfo pageinfo-primary">
-<p>This is a placeholder page that shows you how to use this template site.</p>
-
-</div>
-
-<p>Think about your project’s features and use cases. Use these to choose your core tasks. Each granular use case (enable x, configure y) should have a corresponding tasks page or tasks page section. Users should be able to quickly refer to your core tasks when they need to find out how to do one specific thing, rather than having to look for the instructions in a bigger tutorial or example. Think of your tasks pages as a cookbook with different procedures your users can combine to create something more substantial.</p>
-<p>You can give each task a page, or you can group related tasks together in a page, such as tasks related to a particular feature. As well as grouping related tasks in single pages, you can also group task pages in nested folders with an index page as an overview, as seen in this example site. Or if you have a small docset like the <a href="https://docsy.dev/docs/">Docsy User Guide</a> with no Tutorials or Concepts pages, consider adding your feature-specific pages at the top level of your docs rather than in a Tasks section.</p>
-<p>Each task should give the user</p>
+	</header>    
+	<p>{% hint style=&ldquo;info&rdquo; %}
+Go is often referred to as <em>Golang</em> which also happens to be easier to Google!
+{% endhint %}</p>
+<h2 id="why-go">Why Go?</h2>
+<p>Go is a modern, statically typed, general purpose programming language developed by Google to create reliable and efficient network applications. It&rsquo;s syntax is similar to C and it attempts to combine the high-performance of a low-level language like C with the productivity and convenience of high-level languages like Python. It features garbage collection, fast build times, type inference, and first-class support for &ldquo;goroutines&rdquo;, lightweight <a href="https://en.wikipedia.org/wiki/Coroutine">coroutines</a> that lend themselves to building highly concurrent network services. Go was open-sourced by Google in 2012.</p>
+<p>Go is popular because it made a number of design choices intended to make it easy to learn and the systems produced using it easy to maintain. To this end &hellip;</p>
 <ul>
-<li>The prerequisites for this task, if any (this can be specified at the top of a multi-task page if they&rsquo;re the same for all the page&rsquo;s tasks. &ldquo;All these tasks assume that you understand&hellip;.and that you have already&hellip;.&quot;).</li>
-<li>What this task accomplishes.</li>
-<li>Instructions for the task. If it involves editing a file, running a command, or writing code, provide code-formatted example snippets to show the user what to do! If there are multiple steps, provide them as a numbered list.</li>
-<li>If appropriate, links to related concept, tutorial, or example pages.</li>
+<li>Go has only 25 keywords and useful systems can be built using just the standard library which itself is performant and capable. </li>
+<li>Go compiles very quickly enabling rapid feedback and tight developer iteration loops.</li>
+<li>Go offers a backward compatibility promise. Go&rsquo;s designers have promised that Go code written 5 years ago will still build.</li>
+<li>With respect to testing, benchmarking, linting, and deployment GO&rsquo;S tooling is both built-in and first class.</li>
 </ul>
+<p>In other words, with Go you can write code and when you come back to it a year or two later it will still build and everything will still make sense.</p>
+<p>Another compelling reason to choose Go is that, per the working agreement, <em><strong>TTC only provides support for projects written in Go</strong></em>. While we would love to support Python, C#, and even Elixir (for some of us, especially Elixir!) we simply don&rsquo;t have the time, expertise, and staff to support them, their tooling, their best practices, and their ecosystems.</p>
+<h2 id="install-go">Install Go</h2>
+<p>To install Go launch Windows Terminal and use winget like so :</p>
+<pre tabindex="0"><code>winget install GoLang.Go
+# restart shell to reload PATH
+</code></pre><p>You often need to restart Windows Terminal after installing a new command line utility so that PowerShell will pick up changes to the <code>$ENV:PATH</code> variable. Once Windows Terminal has been restarted execute the following command to insure everything is working as expected :</p>
+<pre tabindex="0"><code>go version
+</code></pre><p>If all went well you should see output that looks something like the following :</p>
+<pre tabindex="0"><code>% go version
+go version go1.17.3 windows/amd64
+</code></pre><p>{% hint style=&ldquo;info&rdquo; %}
+You have access to both system and user environment variables from the command line. Here are a few that often come in handy&hellip;</p>
+<p><code>$ENV:USERPROFILE  Your user profile folder.</code></p>
+<p><code>$ENV:TEMP         Folder for temporary files. </code></p>
+<p><code>$ENV:PATH         List of locations searched for executable files.</code></p>
+<p><code>$PROFILE          Path to script that executes when you open a shell.</code>
+{% endhint %}</p>
+<p>{% embed url=&ldquo;<a href="https://www.youtube.com/watch?v=446E-r0rXHI%22">https://www.youtube.com/watch?v=446E-r0rXHI&quot;</a> %}
+for a quick run-down kick-back and watch 100 seconds of go
+{% endembed %}</p>
+<h2 id="go-modules">Go modules</h2>
+<p><a href="https://golang.org/ref/mod#introduction">Go modules</a> aim to help solve problems related to dependency management, version selection, and reproducible builds.</p>
+<p>Adding module support to a project is pretty straightforward. Select any folder as the root of the module and execute <code>go mod init &lt;modulepath&gt;</code></p>
+<p>This process generates a <code>go.mod</code> file containing the module&rsquo;s path, Go version, and list of its dependencies. The <code>go.mod</code> file also often contains a URL indicating where the code for the module is available. This is often a reference to the project&rsquo;s repository on github.com. To learn more about modules <a href="https://golang.org/doc/modules/gomod-ref">check out the documentation</a>. </p>
+<p>If no <code>&lt;modulepath&gt;</code> is specified <code>go mod init</code> will infer it based on the the name of the current folder. Here is an example of this process executed from the command line : </p>
+<pre tabindex="0"><code>mkdir my-project
+cd my-project
+go mod init my-project
+</code></pre><p>A simple <code>go.mod</code> file will look something like this :</p>
+<pre tabindex="0"><code>module my-project
 
-        <div class="section-index">
-    
-    
-    
-    
-    
-    
-    
-    
-    <hr class="panel-line">
-        
-            
-            <div class="entry">
-                <h5>
-                    <a href="/quasar/tasks/beds/">Bed and Chair Metrics</a>
-                </h5>
-                <p>A short lead descripton about this content page. It can be <strong>bold</strong> or <em>italic</em> and can be split over multiple paragraphs.</p>
-            </div>
-        
-            
-            <div class="entry">
-                <h5>
-                    <a href="/quasar/tasks/porridge/">Porridge Assessment</a>
-                </h5>
-                <p>A short lead descripton about this content page. It can be <strong>bold</strong> or <em>italic</em> and can be split over multiple paragraphs.</p>
-            </div>
-        
-            
-            <div class="entry">
-                <h5>
-                    <a href="/quasar/tasks/task/">Another Task</a>
-                </h5>
-                <p>A short lead descripton about this content page. It can be <strong>bold</strong> or <em>italic</em> and can be split over multiple paragraphs.</p>
-            </div>
-        
-            
-            <div class="entry">
-                <h5>
-                    <a href="/quasar/tasks/ponycopters/">Working with Ponycopters</a>
-                </h5>
-                <p>A short lead descripton about this section page. Text here can also be <strong>bold</strong> or <em>italic</em> and can even be split over multiple paragraphs.</p>
-            </div>
-        
-    
+go 1.17
+</code></pre><p>The <code>go</code> command&rsquo;s built-in documentation provides an overview of all available <code>go mod</code> and other <code>go &lt;subcommand&gt;</code> subcommands which you can access using <code>go help</code> from the command line like so : </p>
+<pre tabindex="0"><code>go help mod
+go help mod init
+</code></pre><p>{% hint style=&ldquo;info&rdquo; %}
+Go 1.11 introduced <a href="https://github.com/golang/go/wiki/Modules">module</a> support which later became the default in version 1.16. The use of <code>GOPATH</code> is no longer recommended.  For more information on how to use GOPATH if you run across it in the wild visit <a href="https://golang.org/doc/gopath_code#GOPATH">this page</a>.
+{% endhint %}</p>
+<h2 id="godochttpspkggodevgolangorgxtoolscmdgodoc"><a href="https://pkg.go.dev/golang.org/x/tools/cmd/godoc">Godoc</a></h2>
+<p>Another quality of life feature of Go is its <a href="https://golang.org/doc/">documentation</a>. To read Go&rsquo;s documentation locally install the <code>godoc</code> command like so :</p>
+<pre tabindex="0"><code>go install golang.org/x/tools/cmd/godoc@latest
+</code></pre><p>You can then read the docs locally by running <code>godoc -http :8000</code>. When you then browse to <a href="http://localhost:8000/pkg">localhost:8000/pkg</a> you will see documentation for all packages installed on your system.</p>
+<h2 id="additional-resources">Additional resources</h2>
+<p>Go has a very large third-party module and tooling ecosystem. For a more or less complete list visit <a href="https://awesome-go.com">https://awesome-go.com</a>.</p>
+
+	
+	
+	
 </div>
 
-	
-	
-	
-</div>
 
           </main>
         </div>

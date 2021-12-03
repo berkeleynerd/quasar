@@ -3,7 +3,8 @@
 title: "Introduction"
 linkTitle: "Introduction"
 type: "docs"
-tags: ["intro"]
+description: >
+  a gentle introduction to development using quasar's domain service patterns and tooling
 weight: 20
 
 cascade:
@@ -25,10 +26,6 @@ cascade:
     kind: "section"
   type: "home"
 ---
-
-{{% pageinfo %}}
-a gentle introduction to development using quasar's domain service patterns and tooling
-{{% /pageinfo %}}
 
 EVE's thoroughly modern domain service architecture is now feature complete so there has never been a better time to [transcend the monolith](https://wiki.ccpgames.com/display/\~kristinn/2017/07/04/Life+Outside+of+the+Monolith) and help make the dream of [EVE Forever](https://wiki.ccpgames.com/display/CCP/2020/06/15/CEOBlog2020w24+-+EVE+Forever) a reality.
 

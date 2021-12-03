@@ -2,76 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://slashgeek.org/quasar/overview/</loc>
-  </url><url>
-    <loc>https://slashgeek.org/quasar/tasks/beds/</loc>
+    <loc>https://slashgeek.org/quasar/dev-environment/</loc>
     <lastmod>2017-01-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://slashgeek.org/quasar/tasks/ponycopters/configuring-ponycopters/</loc>
-    <lastmod>2017-01-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://slashgeek.org/quasar/getting-started/</loc>
-    <lastmod>2017-01-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://slashgeek.org/quasar/examples/</loc>
-    <lastmod>2017-01-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://slashgeek.org/quasar/tasks/ponycopters/launching-ponycopters/</loc>
-    <lastmod>2017-01-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://slashgeek.org/quasar/tutorials/multi-bear/</loc>
-    <lastmod>2017-01-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://slashgeek.org/quasar/tasks/porridge/</loc>
-    <lastmod>2017-01-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://slashgeek.org/quasar/concepts/</loc>
-  </url><url>
-    <loc>https://slashgeek.org/quasar/tasks/task/</loc>
-    <lastmod>2017-01-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://slashgeek.org/quasar/tutorials/tutorial2/</loc>
-    <lastmod>2017-01-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://slashgeek.org/quasar/tasks/</loc>
-    <lastmod>2017-01-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://slashgeek.org/quasar/tutorials/</loc>
-    <lastmod>2017-01-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://slashgeek.org/quasar/reference/</loc>
-    <lastmod>2017-01-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://slashgeek.org/quasar/contribution-guidelines/</loc>
   </url><url>
     <loc>https://slashgeek.org/quasar/</loc>
     <lastmod>2017-01-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://slashgeek.org/quasar/tags/example/</loc>
+    <loc>https://slashgeek.org/quasar/dev-environment/go/</loc>
     <lastmod>2017-01-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://slashgeek.org/quasar/getting-started/example-page/</loc>
+    <loc>https://slashgeek.org/quasar/dev-environment/goland/</loc>
     <lastmod>2017-01-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://slashgeek.org/quasar/reference/parameter-reference/</loc>
-    <lastmod>2017-01-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://slashgeek.org/quasar/tags/reference/</loc>
-    <lastmod>2017-01-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://slashgeek.org/quasar/tags/</loc>
-    <lastmod>2017-01-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://slashgeek.org/quasar/tasks/ponycopters/</loc>
-    <lastmod>2017-01-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://slashgeek.org/quasar/tags/intro/</loc>
-    <lastmod>2017-01-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://slashgeek.org/quasar/categories/</loc>
   </url><url>
-    <loc>https://slashgeek.org/quasar/tags/concepts/</loc>
-  </url><url>
     <loc>https://slashgeek.org/quasar/search/</loc>
+  </url><url>
+    <loc>https://slashgeek.org/quasar/tags/</loc>
   </url>
 </urlset>
