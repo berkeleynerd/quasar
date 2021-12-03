@@ -28,5 +28,5 @@ Invoke-WebRequest -Uri "https://git.io/JXGyz" -OutFile $PROFILE
 
 ## Shell and terminal defaults
 
-To load the latest version of PowerShell by default and / or configure Windows Terminal as your default terminal application navigate to the _Settings _tab in Windows Terminal using the shortcut `Ctrl-,` and set the following values:
+To load the latest version of PowerShell by default and / or configure Windows Terminal as your default terminal application navigate to the _Settings _tab in Windows Terminal using the shortcut `Ctrl-,` and set the following values:  
 ![Windows Terminal](WindowsTerminal-Defaults.png)
