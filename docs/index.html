@@ -23,19 +23,19 @@
 <meta name="description" content="
 
 
-This is a placeholder page that shows you how to use this template site.
+a gentle introduction to development using quasar&rsquo;s domain service patterns and tooling
 
 
 
-This section is where the user documentation for your project lives - …">
-<meta property="og:title" content="Documentation" />
+EVE&rsquo;s thoroughly modern domain service …">
+<meta property="og:title" content="Introduction" />
 <meta property="og:description" content="Quasar : EVE Domain Services" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://slashgeek.org/quasar/" />
 
-<meta itemprop="name" content="Documentation">
+<meta itemprop="name" content="Introduction">
 <meta itemprop="description" content="Quasar : EVE Domain Services"><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Documentation"/>
+<meta name="twitter:title" content="Introduction"/>
 <meta name="twitter:description" content="Quasar : EVE Domain Services"/>
 
 
@@ -87,7 +87,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/quasar/offline-search-index.ecb0953511290656a92ffaf839acb7c4.json"
+  data-offline-search-index-json-src="/quasar/offline-search-index.6b4746a2b2050154dbe61929633e4ad2.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -109,7 +109,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/quasar/offline-search-index.ecb0953511290656a92ffaf839acb7c4.json"
+  data-offline-search-index-json-src="/quasar/offline-search-index.6b4746a2b2050154dbe61929633e4ad2.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -120,7 +120,7 @@ if (!doNotTrack) {
   <nav class="collapse td-sidebar-nav" id="td-section-nav">
     <ul class="td-sidebar-nav__section pr-md-3 ul-0">
       <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-quasar-li">
-  <a href="/quasar/" class="align-left pl-0 active td-sidebar-link td-sidebar-link__section tree-root" id="m-quasar"><span class="td-sidebar-nav-active-item">Documentation</span></a>
+  <a href="/quasar/" class="align-left pl-0 active td-sidebar-link td-sidebar-link__section tree-root" id="m-quasar"><span class="td-sidebar-nav-active-item">Introduction</span></a>
   <ul class="ul-1">
     <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-quasaroverview-li">
   <a href="/quasar/overview/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-quasaroverview"><span class="">Overview</span></a>
@@ -186,6 +186,14 @@ if (!doNotTrack) {
             
 
 
+<div class="td-toc"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#setting-expectations">Setting expectations</a></li>
+    <li><a href="#where-to-find-help">Where to find help</a></li>
+    <li><a href="#a-look-ahead">A look ahead</a></li>
+  </ul>
+</nav></div>
+
 
 
             
@@ -197,7 +205,7 @@ if (!doNotTrack) {
             
             
 <div class="td-content">
-	<h1>Documentation</h1>
+	<h1>Introduction</h1>
   
 	<header class="article-meta">
 		
@@ -226,14 +234,29 @@ if (!doNotTrack) {
 	
 
 <div class="pageinfo pageinfo-primary">
-<p>This is a placeholder page that shows you how to use this template site.</p>
+<p>a gentle introduction to development using quasar&rsquo;s domain service patterns and tooling</p>
 
 </div>
 
-<p>This section is where the user documentation for your project lives - all the information your users need to understand and successfully use your project.</p>
-<p>For large documentation sets we recommend adding content under the headings in this section, though if some or all of them don’t apply to your project feel free to remove them or add your own. You can see an example of a smaller Docsy documentation site in the <a href="https://docsy.dev/docs/">Docsy User Guide</a>, which lives in the <a href="https://github.com/google/docsy/tree/master/userguide">Docsy theme repo</a> if you&rsquo;d like to copy its docs section.</p>
-<p>Other content such as marketing material, case studies, and community updates should live in the <a href="/about/">About</a> and <a href="/community/">Community</a> pages.</p>
-<p>Find out how to use the Docsy theme in the <a href="https://docsy.dev/docs/">Docsy User Guide</a>. You can learn more about how to organize your documentation (and how we organized this site) in <a href="https://docsy.dev/docs/best-practices/organizing-content/">Organizing Your Content</a>.</p>
+<p>EVE&rsquo;s thoroughly modern domain service architecture is now feature complete so there has never been a better time to <a href="https://wiki.ccpgames.com/display/~kristinn/2017/07/04/Life+Outside+of+the+Monolith">transcend the monolith</a> and help make the dream of <a href="https://wiki.ccpgames.com/display/CCP/2020/06/15/CEOBlog2020w24+-+EVE+Forever">EVE Forever</a> a reality.</p>
+<p>From the perspective of even a seasoned EVE developer, however, there are <em><strong>a lot</strong></em> of new technologies and concepts you need to be familiar with to effectively contribute to this effort. Furthermore, it&rsquo;s hard to know exactly where to start on this journey and how to stay on the optimal path through the multitude of confluence pages, READMEs, FAQs, blog posts, and third-party documentation you encounter along the way.</p>
+<p>In this guide we attempt to provide just such a starting point for developers new to CCP&rsquo;s domain service architecture and its long list of technologies. Our goal is to help you navigate step-by-step past each technological challenge, summarize the essential knowledge you need to keep going, and point out important internal and external resources you will want to circle back to later once you are well on your way to delivering real business and gameplay value for both CCP and its players alike.</p>
+<h2 id="setting-expectations">Setting expectations</h2>
+<p>Like many other teams at CCP, TechCo maintains an official <a href="https://wiki.ccpgames.com/display/TECHCO/Working+agreement+with+teams+collaborating+with+Team+Tech-Co">working agreement</a> designed to facilitate a positive and productive working relationship between its staff and other developers throughout the company. <strong>This is an important document</strong> and you should read it in its entirety and bookmark it to refer to later. In fact, many of the topics we will consider in this guide are sourced directly from the working agreement and expanded on to add clarity, detail, and substance.</p>
+<h2 id="where-to-find-help">Where to find help</h2>
+<p>If you have questions or run into issues while following along with this guide feel free to ask us for help on Slack. Google and Stack Overflow are surprisingly good resources, as always, but sometimes miss the mark &hellip; when this happens we are here to help!</p>
+<ul>
+<li>For questions about the Go language, tooling, and ecosystem in general reach out for help in the <a href="https://ccpgames.slack.com/messages/golang/">#golang</a> channel.</li>
+<li>For questions about how to design amazing, bullet-proof protobuf definitions ask for a review in the <a href="https://ccpgames.slack.com/messages/eve-proto/">#eve-proto</a> channel.</li>
+<li>For all other questions either drop by our desks or chat with us in the <a href="https://ccpgames.slack.com/messages/eve-services/">#eve-services</a> channel.</li>
+<li>If you run into a blocker you can ping our help desk at <strong>@ttc-help</strong> - whoever is on-call should be able to answer your question or put you in touch with the right resource to help get your issue resolved.</li>
+</ul>
+<p>{% hint style=&ldquo;info&rdquo; %}
+Roman&rsquo;s excellent <a href="https://wiki.ccpgames.com/pages/viewpage.action?pageId=160078718">Eve Service FAQ</a> is an absolutely essential read. Once you are ready to develop a service it will be an indispensable resource!
+{% endhint %}</p>
+<h2 id="a-look-ahead">A look ahead</h2>
+<p>We use <em><strong>Go</strong></em> to write code and tests, <em><strong>Git</strong></em> to handle version control, and <em><strong>Test Driven Design</strong></em> as our overarching methodology. Combined with judicious use of the <em><strong>command line</strong></em> this suite of technologies has allowed us to rapidly and reliably deliver new features while staying &ldquo;in the flow.&rdquo;</p>
+<p>In the next few sections we briefly introduce you to each of these technologies after which we provide a comprehensive tutorial to help you learn <em>just enough</em> of each to kick start your development efforts. After completing this tutorial you will also be better prepared to tackle more advanced Go language learning <a href="https://www.gopl.io">resources</a>.</p>
 
         <div class="section-index">
     
